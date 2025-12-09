@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill - Smart Supermarket</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="bill-container">
+        <div class="bill-box">
+            <div class="bill-header">
+                <h1>SMART SUPERMARKET</h1>
+                <p>Thank You For Shopping!</p>
+                <div class="bill-info">
+                    <p>Bill No: <span id="billNo"></span></p>
+                    <p>Date: <span id="billDate"></span></p>
+                    <p>Time: <span id="billTime"></span></p>
+                    <p>Machine: <span id="billMachine"></span></p>
+                </div>
+            </div>
+
+            <table class="bill-table">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Qty</th>
+                        <th>Price</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody id="billItems">
+                    <!-- Items will be loaded dynamically -->
+                </tbody>
+            </table>
+
+            <div class="bill-summary">
+                <div class="summary-row">
+                    <span>Subtotal:</span>
+                    <span>₹<span id="billSubtotal">0.00</span></span>
+                </div>
+                <div class="summary-row">
+                    <span>Tax (5%):</span>
+                    <span>₹<span id="billTax">0.00</span></span>
+                </div>
+                <div class="summary-row total-row">
+                    <span>Grand Total:</span>
+                    <span>₹<span id="billGrandTotal">0.00</span></span>
+                </div>
+            </div>
+
+            <div class="bill-footer">
+                <p>⭐ Visit Again!</p>
+                <button class="btn-primary" onclick="window.print()">Print Bill</button>
+                <button class="btn-secondary" onclick="window.location.href='index.html'">New Transaction</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bill.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Supermarket - Machine Selection</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🛒 Smart Supermarket</h1>
+            <p>Select Your Machine</p>
+            <button class="admin-btn" onclick="window.location.href='admin.html'">Admin Login</button>
+        </header>
+
+        <div class="machines-grid">
+            <!-- Machine 1: Vegetables -->
+            <div class="machine-card" onclick="goToMachine(1)">
+                <div class="machine-icon">🥬</div>
+                <h3>Machine 1</h3>
+                <p>Vegetables</p>
+            </div>
+
+            <!-- Machine 2: Fruits -->
+            <div class="machine-card" onclick="goToMachine(2)">
+                <div class="machine-icon">🍎</div>
+                <h3>Machine 2</h3>
+                <p>Fruits</p>
+            </div>
+
+            <!-- Machine 3: Chocolate -->
+            <div class="machine-card" onclick="goToMachine(3)">
+                <div class="machine-icon">🍫</div>
+                <h3>Machine 3</h3>
+                <p>Chocolate & Sweets</p>
+            </div>
+
+            <!-- Machine 4: Stationery -->
+            <div class="machine-card" onclick="goToMachine(4)">
+                <div class="machine-icon">✏️</div>
+                <h3>Machine 4</h3>
+                <p>Stationery</p>
+            </div>
+
+            <!-- Machine 5: Washing Items -->
+            <div class="machine-card" onclick="goToMachine(5)">
+                <div class="machine-icon">🧼</div>
+                <h3>Machine 5</h3>
+                <p>Washing Items</p>
+            </div>
+
+            <!-- Machine 6: Ice Cream -->
+            <div class="machine-card" onclick="goToMachine(6)">
+                <div class="machine-icon">🍦</div>
+                <h3>Machine 6</h3>
+                <p>Ice Cream</p>
+            </div>
+
+            <!-- Machine 7: Dairy -->
+            <div class="machine-card" onclick="goToMachine(7)">
+                <div class="machine-icon">🥛</div>
+                <h3>Machine 7</h3>
+                <p>Dairy Products</p>
+            </div>
+
+            <!-- Machine 8: Kitchen Items -->
+            <div class="machine-card" onclick="goToMachine(8)">
+                <div class="machine-icon">🍳</div>
+                <h3>Machine 8</h3>
+                <p>Kitchen & Cooking</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

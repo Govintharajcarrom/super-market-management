@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping - Smart Supermarket</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="shop-container">
+        <header class="shop-header">
+            <button class="back-btn" onclick="window.location.href='index.html'">← Back</button>
+            <div class="machine-info">
+                <span class="machine-icon-small" id="machineIcon">🛒</span>
+                <h2 id="machineTitle">Machine</h2>
+            </div>
+            <button class="cart-btn" onclick="toggleCart()">
+                🛒 Cart (<span id="cartCount">0</span>)
+            </button>
+        </header>
+
+        <div class="search-section">
+            <input type="text" id="searchInput" placeholder="Search items..." onkeyup="filterProducts()">
+        </div>
+
+        <div class="content-wrapper">
+            <div class="products-section" id="productsSection">
+                <!-- Products will be loaded dynamically -->
+            </div>
+
+            <div class="cart-sidebar" id="cartSidebar">
+                <div class="cart-header">
+                    <h3>Shopping Cart</h3>
+                    <button class="close-cart" onclick="toggleCart()">×</button>
+                </div>
+                <div class="cart-items" id="cartItems">
+                    <p class="empty-cart">Your cart is empty</p>
+                </div>
+                <div class="cart-footer">
+                    <div class="cart-total">
+                        <span>Total:</span>
+                        <span class="total-amount">₹<span id="totalAmount">0.00</span></span>
+                    </div>
+                    <button class="btn-primary" onclick="generateBill()">Generate Bill</button>
+                    <button class="btn-secondary" onclick="clearCart()">Clear Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/products.js"></script>
+    <script src="js/shop.js"></script>
+</body>
+</html>

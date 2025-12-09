@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Start Guide - Smart Supermarket</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        .guide-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        h1 {
+            color: #2563eb;
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 2.5rem;
+        }
+        .subtitle {
+            text-align: center;
+            color: #6b7280;
+            margin-bottom: 40px;
+            font-size: 1.2rem;
+        }
+        .section {
+            margin-bottom: 30px;
+            padding: 25px;
+            background: #f3f4f6;
+            border-radius: 15px;
+        }
+        h2 {
+            color: #1f2937;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .icon {
+            font-size: 1.8rem;
+        }
+        .steps {
+            list-style: none;
+            counter-reset: step-counter;
+        }
+        .steps li {
+            counter-increment: step-counter;
+            margin-bottom: 15px;
+            padding-left: 40px;
+            position: relative;
+            line-height: 1.6;
+        }
+        .steps li:before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: #2563eb;
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+        .credential-box {
+            background: #fef3c7;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 15px 0;
+            border-left: 4px solid #f59e0b;
+        }
+        .credential-box strong {
+            color: #92400e;
+        }
+        .machines-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .machine-box {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            border: 2px solid #e5e7eb;
+        }
+        .machine-icon {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .feature {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            border-left: 4px solid #10b981;
+        }
+        .start-btn {
+            display: block;
+            width: 100%;
+            max-width: 400px;
+            margin: 30px auto;
+            padding: 18px;
+            background: #2563eb;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 12px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            transition: transform 0.2s, background 0.3s;
+        }
+        .start-btn:hover {
+            background: #1d4ed8;
+            transform: translateY(-3px);
+        }
+        .tech-stack {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+        .tech-badge {
+            background: #2563eb;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="guide-container">
+        <h1>🛒 Smart Supermarket System</h1>
+        <p class="subtitle">Complete Frontend Shopping Solution with 8 Machine Interfaces</p>
+
+        <div class="section">
+            <h2><span class="icon">🚀</span> Quick Start</h2>
+            <ol class="steps">
+                <li>Open <strong>index.html</strong> in your web browser</li>
+                <li>Select any machine from 1 to 8</li>
+                <li>Login with demo credentials</li>
+                <li>Browse products and add to cart</li>
+                <li>Generate bill and print receipt</li>
+            </ol>
+            
+            <div class="credential-box">
+                <strong>🔑 Demo Login Credentials:</strong><br>
+                Card Number: <strong>1234</strong><br>
+                PIN: <strong>1234</strong>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2><span class="icon">🏪</span> 8 Machine Categories</h2>
+            <div class="machines-grid">
+                <div class="machine-box">
+                    <div class="machine-icon">🥬</div>
+                    <strong>Machine 1</strong><br>
+                    Vegetables
+                </div>
+                <div class="machine-box">
+                    <div class="machine-icon">🍎</div>
+                    <strong>Machine 2</strong><br>
+                    Fruits
+                </div>
+                <div class="machine-box">
+                    <div class="machine-icon">🍫</div>
+                    <strong>Machine 3</strong><br>
+                    Chocolate
+                </div>
+                <div class="machine-box">
+                    <div class="machine-icon">✏️</div>
+                    <strong>Machine 4</strong><br>
+                    Stationery
+                </div>
+                <div class="machine-box">
+                    <div class="machine-icon">🧼</div>
+                    <strong>Machine 5</strong><br>
+                    Washing Items
+                </div>
+                <div class="machine-box">
+                    <div class="machine-icon">🍦</div>
+                    <strong>Machine 6</strong><br>
+                    Ice Cream
+                </div>
+                <div class="machine-box">
+                    <div class="machine-icon">🥛</div>
+                    <strong>Machine 7</strong><br>
+                    Dairy
+                </div>
+                <div class="machine-box">
+                    <div class="machine-icon">🍳</div>
+                    <strong>Machine 8</strong><br>
+                    Kitchen Items
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2><span class="icon">✨</span> Key Features</h2>
+            <div class="features">
+                <div class="feature">
+                    <strong>🔐 Secure Login</strong><br>
+                    Card-based authentication for each machine
+                </div>
+                <div class="feature">
+                    <strong>🔍 Smart Search</strong><br>
+                    Find products quickly with real-time search
+                </div>
+                <div class="feature">
+                    <strong>🛒 Shopping Cart</strong><br>
+                    Add multiple items with quantity control
+                </div>
+                <div class="feature">
+                    <strong>🧾 Bill Generation</strong><br>
+                    Automatic bill with tax calculation
+                </div>
+                <div class="feature">
+                    <strong>⚙️ Admin Panel</strong><br>
+                    Complete CRUD operations for products
+                </div>
+                <div class="feature">
+                    <strong>📱 Responsive</strong><br>
+                    Works on all devices and screen sizes
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2><span class="icon">🛠️</span> Technology Stack</h2>
+            <div class="tech-stack">
+                <span class="tech-badge">HTML5</span>
+                <span class="tech-badge">CSS3</span>
+                <span class="tech-badge">JavaScript</span>
+                <span class="tech-badge">LocalStorage</span>
+                <span class="tech-badge">Responsive Design</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2><span class="icon">👨‍💼</span> Admin Features</h2>
+            <ol class="steps">
+                <li>Click "Admin Login" button on home page</li>
+                <li>View dashboard with statistics</li>
+                <li><strong>Add</strong> new products across all machines</li>
+                <li><strong>Edit</strong> existing product details</li>
+                <li><strong>Delete</strong> products from inventory</li>
+                <li>Filter and search products by machine</li>
+            </ol>
+        </div>
+
+        <a href="index.html" class="start-btn">🚀 Start Shopping Now</a>
+
+        <div style="text-align: center; color: #6b7280; margin-top: 30px;">
+            <p>💡 <strong>Tip:</strong> All data is stored in your browser's localStorage</p>
+            <p>📦 Pre-loaded with 100+ products across all machines</p>
+        </div>
+    </div>
+</body>
+</html>

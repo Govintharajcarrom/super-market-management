@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Login</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <div class="machine-header">
+                <span class="machine-icon-large" id="machineIcon">🛒</span>
+                <h2 id="machineTitle">Machine Login</h2>
+                <p id="machineCategory">Please insert your card</p>
+            </div>
+
+            <form id="loginForm" onsubmit="handleLogin(event)">
+                <div class="form-group">
+                    <label for="cardNumber">Card Number</label>
+                    <input type="text" id="cardNumber" placeholder="Enter 4-digit card number" maxlength="4" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="pin">PIN</label>
+                    <input type="password" id="pin" placeholder="Enter PIN" maxlength="4" required>
+                </div>
+
+                <button type="submit" class="btn-primary">Login</button>
+                <button type="button" class="btn-secondary" onclick="window.location.href='index.html'">Cancel</button>
+            </form>
+
+            <div class="info-box">
+                <p>ℹ️ Demo Credentials:</p>
+                <p>Card: 1234 | PIN: 1234</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/login.js"></script>
+</body>
+</html>
