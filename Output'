@@ -1,1 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill - Smart Supermarket</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="bill-container">
+        <div class="bill-box">
+            <div class="bill-header">
+                <h1>SMART SUPERMARKET</h1>
+                <p>Thank You For Shopping!</p>
+                <div class="bill-info">
+                    <p>Bill No: <span id="billNo"></span></p>
+                    <p>Date: <span id="billDate"></span></p>
+                    <p>Time: <span id="billTime"></span></p>
+                    <p>Machine: <span id="billMachine"></span></p>
+                </div>
+            </div>
 
+            <table class="bill-table">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Qty</th>
+                        <th>Price</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody id="billItems">
+                    <!-- Items will be loaded dynamically -->
+                </tbody>
+            </table>
+
+            <div class="bill-summary">
+                <div class="summary-row">
+                    <span>Subtotal:</span>
+                    <span>₹<span id="billSubtotal">0.00</span></span>
+                </div>
+                <div class="summary-row">
+                    <span>Tax (5%):</span>
+                    <span>₹<span id="billTax">0.00</span></span>
+                </div>
+                <div class="summary-row total-row">
+                    <span>Grand Total:</span>
+                    <span>₹<span id="billGrandTotal">0.00</span></span>
+                </div>
+            </div>
+
+            <div class="bill-footer">
+                <p>⭐ Visit Again!</p>
+                <button class="btn-primary" onclick="window.print()">Print Bill</button>
+                <button class="btn-secondary" onclick="window.location.href='index.html'">New Transaction</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bill.js"></script>
+</body>
+</html>
+
+
+Overview
+
+This HTML document represents a billing/receipt page for a Smart Supermarket web application. It displays customer purchase details, itemized billing, tax calculation, and provides options to print the bill or start a new transaction.
+
+🧱 Structure Description
+1. Document Setup
+<!DOCTYPE html>
+<html lang="en">
+
+
+Declares the document as HTML5.
+
+Sets the language to English.
+
+2. Head Section
+<head>
+
+
+Contains metadata and external resources:
+
+Character Encoding
+
+<meta charset="UTF-8">
+
+
+Ensures proper text rendering.
+
+Responsive Design
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+Makes the page mobile-friendly.
+
+Title
+
+<title>Bill - Smart Supermarket</title>
+
+
+Displayed in the browser tab.
+
+External CSS
+
+<link rel="stylesheet" href="css/style.css">
+
+
+Links the stylesheet for layout and design.
+
+3. Body Section
+<body>
+
+
+Contains all visible content.
+
+🧾 Bill Layout
+4. Main Container
+<div class="bill-container">
+
+
+Wraps the entire bill for styling and alignment.
+
+5. Bill Header
+<div class="bill-header">
+
+
+Displays store and bill information:
+
+Store name: SMART SUPERMARKET
+
+Thank-you message
+
+Bill details dynamically filled using JavaScript:
+
+Bill number
+
+Date
+
+Time
+
+Machine number
+
+Each detail uses <span> elements with IDs for dynamic updates.
+
+6. Itemized Bill Table
+<table class="bill-table">
+
+
+Displays purchased items:
+
+Column	Description
+Item	Product name
+Qty	Quantity purchased
+Price	Price per unit
+Total	Price × Quantity
+<tbody id="billItems">
+
+
+Items are loaded dynamically via JavaScript.
+
+7. Bill Summary Section
+<div class="bill-summary">
+
+
+Shows payment calculations:
+
+Subtotal
+
+Tax (5%)
+
+Grand Total
+
+Each value is dynamically updated using JavaScript.
+
+8. Footer Section
+<div class="bill-footer">
+
+
+Contains:
+
+Thank-you message
+
+Print Bill button
+
+onclick="window.print()"
+
+
+Opens the print dialog.
+
+New Transaction button
+
+onclick="window.location.href='index.html'"
+
+
+Redirects to the home page.
+
+9. JavaScript Integration
+<script src="js/bill.js"></script>
+
+
+Handles:
+
+Loading bill data
+
+Calculating totals and tax
+
+Updating dynamic content
+
+✅ Key Features
+
+Dynamic bill generation
+
+Responsive design
+
+Printable receipt
+
+Easy navigation for new transactions
+
+Clean and structured layout
+
+🛒 Use Case
+
+This page is ideal for:
+
+Smart supermarkets
+
+POS systems
+
+Retail billing applications
+
+Academic or mini-project demonstrations
+
+If you want, I can also:
+
+Explain bill.js
+
+Write a project report description
+
+Convert this into a PDF-style receipt
+
+Add barcode/QR code support
